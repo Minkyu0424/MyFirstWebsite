@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>ABOUT_YERIN_BAEK</title>
+  <title>Ourloveisgreat</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
 
@@ -17,6 +17,7 @@
       right: 0;
       left: 0;
       margin: 0;
+
     }
 
     button {
@@ -79,21 +80,19 @@
     }
 
     h1 {
-      font-size: 45px
+      font-size: 42px
     }
 
-    h3 {
-      font-size: 35px;
+    h4{
+      font-size: 30px;
     }
-
-    h4 {
-      font-size: 28px;
-    }
-
     .font1 {
       font-family: cursive;
     }
-
+    .info{
+      font-size: 30px;
+      text-align: left;
+    }
     #main {
       display: flex;
       height: 100%
@@ -111,9 +110,9 @@
 
     #introduce {
       font-family: 'Gowun Batang', serif;
-      display:flex;
+      margin-left: 10px display:flex;
       flex-direction: column;
-      background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+      background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     }
 
     #sns {
@@ -123,13 +122,12 @@
     }
 
     #picture {
-      display: flex;
       margin-left: auto;
     }
 
     #lyrics {
-      margin-top: 180px;
-      font-size: 18px
+      margin-top: 100px;
+      font-size: 14px
     }
 
     #artwork {
@@ -144,11 +142,32 @@
 
     #lyrics {
       font-size: 20px;
-
+      margin-right:10px;
     }
     #text{
       margin-left: 10px;
-      margin-right: 10px;
+    }
+    #vidandpic{
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      column-gap: 40px;
+    }
+    #vidandpic2{
+      display: flex;
+      flex-direction: column;
+      column-gap: 30px;
+    }
+    #videos{
+      display: flex;
+      flex-direction: column;
+      row-gap:50px;
+    }
+    .videos{
+      margin-top: 10px;
+    }
+    .info{
+      font-size: 23px;
     }
   </style>
 </head>
@@ -167,9 +186,9 @@
         <button type="button" style="font-size: 20px;" onclick="location.href='Frank.html' ">Frank</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='BBMB.html' ">Bye Bye My Blue</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='LoveYou.html' ">Love You On Christmas</button><br>
-        <button type="button" style="font-size: 20px;" onclick="location.href='OLIG.html' ">Our love is greats</button><br>
+        <button type="button" style="font-size: 20px;" onclick="location.href='OLIG.html' ">Our love is great</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='Everyletter.html' ">Everyletter I sent you</button><br>
-        <button type="button" style="font-size: 20px;" onclick="location.href='Tellus.html' ">Tell us bout your story</button><br>
+        <button type="button" style="font-size: 20px;" onclick="location.href='Tellus.html' ">Tellusboutyourself</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='Gift.html' ">선물</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='Etc.html' ">etc</button>
       </div>
@@ -186,23 +205,48 @@
     </div>
     <div id="introduce">
       <div id="text">
-        <h1>백예린-白藝璘</h1>
-        <h3>(Yeirn Baek)</h3>
+        <h1>Our love is great</h1>
+        <p class="info">Release Date: 2019.03.18 <br><br> Participants: YerinBaek, <br>Cloud, Car The Garden</p>
         <div id="lyrics">
-          출생: 1997년 6월 26일<br><br>
-          출생지: 대전광역시 중구 태평동 <br><br>
-          MBTI: INFP-T<br><br>
-          학력: 대전태평초등학교 (졸업)<br><br>
-          중학교 졸업 학력 검정고시 (합격)<br><br>
-          한림연예예술고등학교 <br><br>
-          한림연예예술고등학교 (실용음악과 / 졸업)<br><br>
-          소속사: BlueVinyl<br><br>
-          소속그룹: The Volunteers
+          <h4>Track List</h4>
+          1. 야간비행(魔女の花) <br><br>
+          2. 그건 아마 우리의 잘못은 아닐 거야<br><br>
+          3. Dear my blue<br><br>
+          4. Our love is great<br><br>
+          5. 내가 날 모르는 것처럼 (Feat. 카더가든)<br><br>
+          6. 지켜줄게<br><br>
+          7. 내가 날 모르는 것처럼 (2019 ver.)
         </div>
       </div>
     </div>
-    <div id="picture">
-      <img src="pictures/main.png" alt="">
+    <div id="vidandpic">
+      <div id="vidandpic2">
+          <div class="videos">
+            <button type="button" style="font-size: 20px;background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);color:#000000">야간비행(Live)</button><br>
+            <iframe width="450" height="265" src="https://www.youtube.com/embed/0sQYv-NFI1s" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="videos">
+            <button type="button" style="font-size: 15px;background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);color:#000000">그건 아마 우리의 잘못은 아닐거야</button><br>
+            <iframe width="450" height="265" src="https://www.youtube.com/embed/0sQYv-NFI1s" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="videos">
+            <button type="button" style="font-size: 20px;background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);color:#000000">지켜줄게</button><br>
+            <iframe width="450" height="265" src="https://www.youtube.com/embed/_EfRa_ywkEw" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      <div id="videos">
+        <div id="picture">
+          <img src="pictures/olig.png" alt="">
+        </div>
+        <div class="video">
+          <button type="button" style="font-size: 20px;background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);color:#000000">As I am(Live)</button><br>
+          <iframe width="690" height="350" src="https://www.youtube.com/embed/HQkfTdWaRQc" title="YouTube video player"
+           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </body>

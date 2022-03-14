@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>ABOUT_YERIN_BAEK</title>
+  <title>BlueVinyl</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
 
@@ -87,7 +87,11 @@
     }
 
     h4 {
-      font-size: 28px;
+      font-size: 30px;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     .font1 {
@@ -111,9 +115,9 @@
 
     #introduce {
       font-family: 'Gowun Batang', serif;
-      display:flex;
+      margin-left: 10px display:flex;
       flex-direction: column;
-      background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+      background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
     }
 
     #sns {
@@ -122,14 +126,18 @@
       flex-direction: column;
     }
 
-    #picture {
+    #pictures {
       display: flex;
+      flex-direction: column;
       margin-left: auto;
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(#2980b9, #6dd5fa, #ffffff);
     }
 
     #lyrics {
-      margin-top: 180px;
-      font-size: 18px
+      margin-top: 110px;
+      font-size: 20px
     }
 
     #artwork {
@@ -143,13 +151,29 @@
     }
 
     #lyrics {
-      font-size: 20px;
+      font-size: 22px;
+    }
 
+    #members {
+      display: flex;
+      justify-content: space-between;
     }
     #text{
       margin-left: 10px;
-      margin-right: 10px;
     }
+    .effect{
+      overflow: hidden;
+    }
+    .effect img{
+      object-fit:cover;
+      transform:scale(1.0);
+      transition: transform.5s;
+    }
+    .effect img:hover{
+      transform:scale(1.5);
+      transition: transform.5s;
+    }
+
   </style>
 </head>
 
@@ -167,9 +191,9 @@
         <button type="button" style="font-size: 20px;" onclick="location.href='Frank.html' ">Frank</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='BBMB.html' ">Bye Bye My Blue</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='LoveYou.html' ">Love You On Christmas</button><br>
-        <button type="button" style="font-size: 20px;" onclick="location.href='OLIG.html' ">Our love is greats</button><br>
+        <button type="button" style="font-size: 20px;" onclick="location.href='OLIG.html' ">Our love is great</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='Everyletter.html' ">Everyletter I sent you</button><br>
-        <button type="button" style="font-size: 20px;" onclick="location.href='Tellus.html' ">Tell us bout your story</button><br>
+        <button type="button" style="font-size: 20px;" onclick="location.href='Tellus.html' ">Tellusboutyourself</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='Gift.html' ">선물</button><br>
         <button type="button" style="font-size: 20px;" onclick="location.href='Etc.html' ">etc</button>
       </div>
@@ -186,23 +210,31 @@
     </div>
     <div id="introduce">
       <div id="text">
-        <h1>백예린-白藝璘</h1>
-        <h3>(Yeirn Baek)</h3>
+        <h1>블루바이닐</h1>
+        <h3>(BlueVinyl)</h3>
         <div id="lyrics">
-          출생: 1997년 6월 26일<br><br>
-          출생지: 대전광역시 중구 태평동 <br><br>
-          MBTI: INFP-T<br><br>
-          학력: 대전태평초등학교 (졸업)<br><br>
-          중학교 졸업 학력 검정고시 (합격)<br><br>
-          한림연예예술고등학교 <br><br>
-          한림연예예술고등학교 (실용음악과 / 졸업)<br><br>
-          소속사: BlueVinyl<br><br>
-          소속그룹: The Volunteers
+          설립일자: 2019년 09월 01일<br><br>
+          업종: 연예,엔터테인먼트<br><br>
+          기업규모: 중소기업 <br><br>
+          대표: 이예든<br><br>
+          주소: 서울특별시 마포구 서교동 와우산로<br>
         </div>
       </div>
     </div>
-    <div id="picture">
-      <img src="pictures/main.png" alt="">
+    <div id="pictures">
+      <img src="pictures/Blue.png" alt="">
+      <div id="members">
+        <div class="effect">
+          <img src="pictures/cloud.jpg" alt="">
+        </div>
+        <div class="effect">
+          <img src="pictures/theV.jpg" alt="">
+        </div>
+        <div class="effect">
+          <img src="pictures/yerin2.jpg" alt="">
+        </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
